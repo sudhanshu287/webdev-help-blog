@@ -1,5 +1,5 @@
 {
-  "name": "server",
+  "name": "webdev-blog-api",
   "private": true,
   "version": "0.1.0",
   "description": "A Strapi application",
@@ -9,18 +9,18 @@
     "build": "strapi build",
     "strapi": "strapi"
   },
+  "devDependencies": {},
   "dependencies": {
-    "@strapi/plugin-i18n": "4.9.0",
-    "@strapi/plugin-users-permissions": "4.9.0",
-    "@strapi/provider-upload-cloudinary": "^4.9.0",
-    "@strapi/strapi": "4.9.0",
-    "pg": "8.8.0"
+    "@strapi/strapi": "4.6.1",
+    "@strapi/plugin-users-permissions": "4.6.1",
+    "@strapi/plugin-i18n": "4.6.1",
+    "better-sqlite3": "8.0.1"
   },
   "author": {
     "name": "A Strapi developer"
   },
   "strapi": {
-    "uuid": "c564ea2d-9fd4-4bb9-93de-11fdab282402"
+    "uuid": "7188111a-66ab-4e67-903d-0d40559029ce"
   },
   "engines": {
     "node": ">=14.19.1 <=18.x.x",

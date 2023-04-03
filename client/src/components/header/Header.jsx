@@ -30,8 +30,6 @@ const Header = () => {
 
               <button className="btn btn-primary">
                 <span className="span">Subscribe</span>
-
-                {/* <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon> */}
                 <i className="ri-arrow-right-line"></i>
               </button>
 

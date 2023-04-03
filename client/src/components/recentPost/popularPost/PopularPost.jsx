@@ -31,7 +31,7 @@ const PopularPost = () => {
               <div className="warpper">
                 <p className="card-subtitle">15 mins read</p>
 
-                <time className="publish-date" datetime="2022-04-15">
+                <time className="publish-date" dateTime="2022-04-15">
                   15 April 2022
                 </time>
               </div>
@@ -62,7 +62,7 @@ const PopularPost = () => {
               <div className="warpper">
                 <p className="card-subtitle">15 mins read</p>
 
-                <time className="publish-date" datetime="2022-04-15">
+                <time className="publish-date" dateTime="2022-04-15">
                   15 April 2022
                 </time>
               </div>
@@ -93,7 +93,7 @@ const PopularPost = () => {
               <div className="warpper">
                 <p className="card-subtitle">15 mins read</p>
 
-                <time className="publish-date" datetime="2022-04-15">
+                <time className="publish-date" dateTime="2022-04-15">
                   15 April 2022
                 </time>
               </div>
@@ -124,7 +124,7 @@ const PopularPost = () => {
               <div className="warpper">
                 <p className="card-subtitle">15 mins read</p>
 
-                <time className="publish-date" datetime="2022-04-15">
+                <time className="publish-date" dateTime="2022-04-15">
                   15 April 2022
                 </time>
               </div>
@@ -154,7 +154,7 @@ const PopularPost = () => {
               <div className="warpper">
                 <p className="card-subtitle">15 mins read</p>
 
-                <time className="publish-date" datetime="2022-04-15">
+                <time className="publish-date" dateTime="2022-04-15">
                   15 April 2022
                 </time>
               </div>

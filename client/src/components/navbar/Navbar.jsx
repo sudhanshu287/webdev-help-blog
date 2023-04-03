@@ -1,11 +1,13 @@
 import React, { useState,useEffect } from 'react'
 import './Navbar.css';
-import LogoImg from '../../assets/logo.svg';
+import LogoImg from '../../assets/wdh-small-logo.png';
 import AuthorImg from '../../assets/author-1.png';
 import DarkMode from './darkModeButton/DarkMode';
+import { useNavigate } from 'react-router-dom';
 const Navbar = () => {
     const [openNav,setOpenNav]=useState(false);
     const [scrolled,setScrolled]=useState(false);
+    const navigate=useNavigate();
     const handleScroll=()=>{
       const offset = window.scrollY;
       if (offset > 200) {
@@ -19,21 +21,21 @@ const Navbar = () => {
       window.addEventListener('scroll', handleScroll)
   }, []);
   return (
-    <header className={`header ${scrolled? "active":""}`} data-header>
+    <header className={`header ${scrolled? "active":""}`} >
     <div className="container">
 
       <a href="/" className="logo">
         <img src={LogoImg} width="119" height="37" alt="Wren logo" />
       </a>
 
-      <nav className={`navbar ${openNav?"active":""}`} data-navbar>
+      <nav className={`navbar ${openNav?"active":""}`}>
 
         <div className="navbar-top">
-          <a href="#" className="logo">
-            <img src={LogoImg} width="119" height="37" alt="Wren logo" />
+          <a href="/" className="logo">
+            <img src={LogoImg} width="119" height="37" alt="webdevhelp logo" />
           </a>
 
-          <button className="nav-close-btn" aria-label="close menu" onClick={()=>setOpenNav(false)} data-nav-toggler>
+          <button className="nav-close-btn" aria-label="close menu" onClick={()=>setOpenNav(false)} >
             <i className="ri-close-fill"></i>
           </button>
         </div>
@@ -41,23 +43,18 @@ const Navbar = () => {
         <ul className="navbar-list">
 
           <li>
-            <a href="#home" className="navbar-link hover-1" data-nav-toggler>Home</a>
+            <a href="/" className="navbar-link hover-1" >Home</a>
           </li>
 
           <li>
-            <a href="#topics" className="navbar-link hover-1" data-nav-toggler>Topics</a>
+            <a href="/privacy-policy" className="navbar-link hover-1" >Privacy Policy</a>
           </li>
 
           <li>
-            <a href="#featured" className="navbar-link hover-1" data-nav-toggler>Featured Post</a>
+            <a href="/featured" className="navbar-link hover-1" >Disclaimer</a>
           </li>
-
           <li>
-            <a href="#recent" className="navbar-link hover-1" data-nav-toggler>Recent Post</a>
-          </li>
-
-          <li>
-            <a href="#" className="navbar-link hover-1" data-nav-toggler>Contact</a>
+            <a href="/contact" className="navbar-link hover-1" >Contact</a>
           </li>
 
         </ul>
@@ -107,16 +104,15 @@ const Navbar = () => {
         </div>
 
         <p className="copyright-text">
-          Copyright 2022 © Wren - Personal Blog Template.
-          Developed by codewithsadee
+          Copyright 2023 © WebDevHelp.
+          Developed by <a href="https://sudhanshupatel.vercel.app">Sudhanshu Patel</a>
         </p>
 
       </nav>
       <DarkMode/>
       <a href="#" className="btn btn-primary">Subscribe</a>
 
-      <button className="nav-open-btn" aria-label="open menu" onClick={()=>setOpenNav(true)} data-nav-toggler>
-        {/* <ion-icon name="menu-outline" aria-hidden="true"></ion-icon> */}
+      <button className="nav-open-btn" aria-label="open menu" onClick={()=>setOpenNav(true)} >
         <i className="ri-menu-line" ></i>
       </button>
 
